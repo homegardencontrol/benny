@@ -13,3 +13,9 @@ What is Class object variable?
 example
 =======
 a.b.c.x=100
+
+or
+
+a.b.c[x=100,y=200]  (Benny 0.91)
+
+
