@@ -21,6 +21,9 @@ a.b.c[x=100,y=200]
 check
 
 print(a.b.c.x)
+
 100
+
 print(a.b.c.y)
+
 200
