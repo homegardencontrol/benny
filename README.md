@@ -1,8 +1,9 @@
-# benny
-Benny Language base on Python 3
+# Benny Language 
+base on Python 3
 Lua like Class object variable system on Python 
-Benny 0.9
-=========
+
+Benny 0.91
+==========
 
 to test
 
