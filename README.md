@@ -11,8 +11,8 @@ python benny.py
 
 What is Class object variable?
 ==============================
-example
-=======
+examples
+========
 a.b.c.x=100
 
 or
