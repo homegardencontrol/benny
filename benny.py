@@ -33,10 +33,14 @@ while True:
 	if __benny__syntax__.find('.')<__benny__syntax__.find('='):
 		if len(__benny__syntax__.split('['))>2 or len(__benny__syntax__.split(']'))>2:
 			print('Benny error more than [1 block] in sentense')
-			exec(__benny__syntax__)
+			try:
+				exec(__benny__syntax__)
+			except Exception as e: print(e)
 			continue
 		if __benny__syntax__[0:__benny__syntax__.find('=')].find('(')>=0:
-			exec(__benny__syntax__)
+			try:
+				exec(__benny__syntax__)
+			except Exception as e: print(e)
 			continue
 		__benny__object__list__ = __benny__syntax__.split('.')
 		__root__object__ = ''
@@ -73,4 +77,6 @@ while True:
 				__root__object__ = __root__object__+'_'+__benny__object__
 				__root__dot__object__ = __root__dot__object__+'.'+__benny__object__
 	else:
-		exec(__benny__syntax__)
+		try:
+			exec(__benny__syntax__)
+		except Exception as e: print(e)
