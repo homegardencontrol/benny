@@ -2,7 +2,7 @@
 base on Python 3
 Lua like Class object variable system on Python 
 
-Benny 0.91
+Benny 0.92
 ==========
 
 to test
