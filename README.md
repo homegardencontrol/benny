@@ -56,7 +56,7 @@ Benny error more than [1 block] in sentense and dict not allow
 Something need in code
 ======================
 
-How to get Benny Class object variable from variable string ?
+Dict not allow, How to get Benny Class object variable from variable string ?
 
 a.b.c[x=100,y=200]
 
