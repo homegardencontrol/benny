@@ -11,6 +11,8 @@ python benny.py
 
 What is Class object variable?
 ==============================
+![Benny Language](https://github.com/homegardencontrol/benny/blob/main/benny_language.png?raw=true)
+
 examples
 ========
 a.b.c.x=100
