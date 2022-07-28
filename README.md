@@ -42,3 +42,22 @@ a.b[x=100,y=200]
 a.b.c[x=150,y=250]
 
 Seperate into 2 lines
+
+Something need in code
+======================
+
+How to get Class object variable from variable string ?
+
+a.b.c[x=100,y=200]
+
+exec('value = a.b.c.x')
+
+or
+
+sometext = 'x'
+
+exec('value = a.b.c.'+sometext)
+
+print(value)
+
+100
