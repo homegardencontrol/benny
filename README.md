@@ -46,7 +46,7 @@ Seperate into 2 lines
 Something need in code
 ======================
 
-How to get Class object variable from variable string ?
+How to get Benny Class object variable from variable string ?
 
 a.b.c[x=100,y=200]
 
