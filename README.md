@@ -35,7 +35,7 @@ Don't do this
 =============
 a.b[x=100,y=200,c[x=150,y=250]]
 
-Benny error more than [1 block] in sentense
+Benny error more than [1 block] in sentense and dict not allow
 
 You can do like this
 
@@ -45,6 +45,11 @@ a.b.c[x=150,y=250]
 
 Seperate into 2 lines
 
+
+
+a.b[pos={"x":100,"y":200}] --- dict not allow in Benny
+
+Benny error more than [1 block] in sentense and dict not allow
 
 ![Benny](https://github.com/homegardencontrol/benny/blob/main/benny.png?raw=true)
 
