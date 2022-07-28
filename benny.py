@@ -30,7 +30,7 @@ while True:
 		print('Benny MIT license')
 		print('=================')
 		print('Type license() to see the full Python license text')
-	if __benny__syntax__.find('.')<__benny__syntax__.find('='):
+	if __benny__syntax__.find('.')<__benny__syntax__.find('=') and __benny__syntax__.find('.')>=0::
 		if len(__benny__syntax__.split('['))>2 or len(__benny__syntax__.split(']'))>2:
 			print('Benny error more than [1 block] in sentense')
 			try:
