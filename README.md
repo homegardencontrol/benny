@@ -51,24 +51,24 @@ a.b[pos={"x":100,"y":200}] --- dict not allow in Benny
 
 Benny error more than [1 block] in sentense and dict not allow
 
-![Benny](https://github.com/homegardencontrol/benny/blob/main/benny.png?raw=true)
+![Benny](https://github.com/homegardencontrol/benny/blob/main/benny_function.png?raw=true)
 
 Something need in code
 ======================
 
 Dict not allow, How to get Benny Class object variable from variable string ?
 
-a.b.c[x=100,y=200]
+a.b.c[x=100,y=110]
 
-exec('value = a.b.c.x')
+x = benny('a.b.c.x')
 
 or
 
 sometext = 'x'
 
-exec('value = a.b.c.'+sometext)
+x = benny('a.b.c.'+sometext)
 
-print(value)
+print(x)
 
 100
 
