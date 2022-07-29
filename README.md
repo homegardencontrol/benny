@@ -45,11 +45,18 @@ a.b.c[x=150,y=250]
 
 Seperate into 2 lines
 
-===============
+Dict not allow but array can
+============================
 
 a.b[pos={"x":100,"y":200}] --- dict not allow in Benny
 
 Benny error more than [1 block] in sentense and dict not allow
+
+a.b.varray = [0,1,2,3,4,5] 
+
+print(a.b.varray)
+
+{0,1,2,3,4,5}
 
 ![Benny](https://github.com/homegardencontrol/benny/blob/main/benny_function.png?raw=true)
 
