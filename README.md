@@ -60,7 +60,7 @@ print(a.b.varray)
 
 ![Benny](https://github.com/homegardencontrol/benny/blob/main/benny_function.png?raw=true)
 
-Something need in code
+Something need in code Benny() function
 ======================
 
 Dict not allow, How to get Benny Class object variable from variable string ?
