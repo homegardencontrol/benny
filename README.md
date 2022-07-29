@@ -79,11 +79,6 @@ print(x)
 
 100
 
-Benny in function
-=================
-
-![Benny in function](https://github.com/homegardencontrol/benny/blob/main/benny_in_def.png?raw=true)
-
 Bennylist function
 ==================
 
