@@ -2,6 +2,23 @@ print('Benny 0.91')
 print('==========')
 print('base on Python 3')
 print('Type "help", "copyright", "credits" or "license" for more information.')
+# define clear function
+def cls():
+	import os
+	from subprocess import call
+	# check and make call for specific operating system
+	if os.name =='posix':
+		_ = call('clear')
+	else:
+		_ = os.system('cls')
+__benny__value__ = ''
+__benny__list__ = []
+def benny(name):
+	exec('global __benny__value__\n__benny__value__ = '+name)
+	return __benny__value__
+def bennylist(name):
+	exec('global __benny__list__\n__benny__list__ = '+name+'.__benny__list__')
+	return __benny__list__
 while True:
 	print('>>>',end=' ')
 	__benny__syntax__ = input()
@@ -67,7 +84,7 @@ while True:
 		__root__dot__object__ = ''
 		for __benny__object__ in __benny__object__list__:
 			__benny__list__type__ = False
-			if __benny__object__.find('[')>0:
+			if __benny__object__.find('[')>0 and __benny__object__[__benny__object__.find('[')+1:__benny__object__.find(']')].find('=')>=0:
 				__benny__list__ = __benny__object__[__benny__object__.find('[')+1:__benny__object__.find(']')].split(',')
 				__benny__object__=__benny__object__[0:__benny__object__.find('[')]
 				__benny__list__type__ = True
@@ -78,17 +95,19 @@ while True:
 				__benny__type__value__ = True
 			if __root__object__ == '':
 				if not __benny__object__ in locals():
-					exec('class '+__benny__object__+':\n pass')
+					exec('class '+__benny__object__+':\n __benny__list__=[]\n pass')
 			else:
 				if not(__benny__type__value__):
 					if not __root__object__+'_'+__benny__object__ in locals():
-						exec('class '+__root__object__+'_'+__benny__object__+':\n pass')
+						exec('class '+__root__object__+'_'+__benny__object__+':\n __benny__list__=[]\n pass')
 						exec(__root__dot__object__+'.'+__benny__object__+'='+__root__object__+'_'+__benny__object__)
 			if __benny__list__type__:
 				for __benny__inlist__ in __benny__list__:
+					exec(__root__object__+'.'+__benny__object__+'.__benny__list__.append("'+__benny__inlist__[0:__benny__inlist__.find('=')]+'")')
 					exec(__root__object__+'.'+__benny__object__+'.'+__benny__inlist__)
 			else:
 				if __benny__type__value__:
+					exec(__root__object__+'.__benny__list__.append("'+__benny__object__+'")')
 					exec(__root__object__+'.'+__benny__object__+'='+__benny__value__)
 			if __root__object__=='':
 				__root__object__ = __benny__object__
