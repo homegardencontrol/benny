@@ -86,9 +86,9 @@ Bennylist() function
 
 ![Bennylist](https://github.com/homegardencontrol/benny/blob/main/bennylist.png?raw=true)
 
-list of Class object varible name
+list of Class object variable name
 
-print(benny('a.b.c'))
+print(bennylist('a.b.c'))
 
 ['x','y']
 
