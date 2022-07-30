@@ -58,7 +58,7 @@ a.b.varray = [0,1,2,3,4,5]
 
 print(a.b.varray)
 
-{0,1,2,3,4,5}
+[0, 1, 2, 3, 4, 5]
 
 ![Benny](https://github.com/homegardencontrol/benny/blob/main/benny_function.png?raw=true)
 
