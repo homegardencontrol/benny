@@ -2,6 +2,8 @@
 base on Python 3
 Lua like Class object variable system on Python 
 
+![Benny logo](https://github.com/homegardencontrol/benny/blob/main/benny_logo.png?raw=true)
+
 Benny 0.91
 ==========
 
