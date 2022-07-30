@@ -81,7 +81,20 @@ print(x)
 
 100
 
-Bennylist function
+Bennylist() function
 ==================
 
 ![Bennylist](https://github.com/homegardencontrol/benny/blob/main/bennylist.png?raw=true)
+
+list of Class object varible name
+
+print(benny('a.b.c'))
+
+["x","y"]
+
+Comming soon
+============
+
+![Konner](https://github.com/homegardencontrol/benny/blob/main/Konner.png?raw=true)
+
+Benny is the official language for Konner 3D Metaverse Space.
