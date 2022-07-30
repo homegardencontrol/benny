@@ -90,7 +90,7 @@ list of Class object varible name
 
 print(benny('a.b.c'))
 
-["x","y"]
+['x','y']
 
 Comming soon
 ============
