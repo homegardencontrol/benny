@@ -46,6 +46,7 @@ while True:
 		print('All Rights Reserved.')
 	if __benny__syntax__=='credits':
 		print('Benny in memory of Supot Sawangpiriyakij')
+		print('and Benny Hill')
 		print('Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands')
 		print('for supporting Python development.  See www.python.org for more information.')
 	if __benny__syntax__=='license':
