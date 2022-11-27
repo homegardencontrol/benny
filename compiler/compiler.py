@@ -13,7 +13,8 @@ for line in lines:
         __benny__list__ = __benny__object__[__benny__object__.find('[')+1:__benny__object__.find(']')].split(',')
         __benny__object__=__benny__object__[0:__benny__object__.find('[')]
         if not __benny__object__ in __benny__class__:
-            exec('class '+__benny__object__+':\n __benny__list__=[]\n pass')
+            #exec('class '+__benny__object__+':\n __benny__list__=[]\n pass')
+            out_text = out_text + 'class '+__benny__object__+':\n __benny__list__=[]\n pass\n'
             __benny__class__.append(__benny__object__)
         for __benny__inlist__ in __benny__list__:
             #exec(__benny__object__+'.__benny__list__.append("'+__benny__inlist__[0:__benny__inlist__.find('=')].strip()+'")')
