@@ -18,10 +18,11 @@ for line in lines:
             __benny__class__.append(__benny__object__)
         for __benny__inlist__ in __benny__list__:
             #exec(__benny__object__+'.__benny__list__.append("'+__benny__inlist__[0:__benny__inlist__.find('=')].strip()+'")')
-            out_text = out_text + __benny__object__+'.__benny__list__.append("'+__benny__inlist__[0:__benny__inlist__.find('=')].strip()+'")\n'
+            out_text = out_text + 'if not "'+__benny__inlist__[0:__benny__inlist__.find('=')].strip()+'" in '+__benny__object__+'.__benny__list__ :\n'
+            out_text = out_text + ' '+ __benny__object__+'.__benny__list__.append("'+__benny__inlist__[0:__benny__inlist__.find('=')].strip()+'")\n'
             #exec(__benny__object__+'.'+__benny__inlist__)
             out_text = out_text + __benny__object__+'.'+__benny__inlist__+'\n'
-        continue
+            continue
     if __benny__syntax__.find('.')<__benny__syntax__.find('=') and __benny__syntax__.find('.')>=0:
         if len(__benny__syntax__.split('['))>2 or len(__benny__syntax__.split(']'))>2 or __benny__syntax__.find('{')>=0:
             print('Benny error more than [1 block] in sentense and dict not allow')
@@ -60,13 +61,15 @@ for line in lines:
             if __benny__list__type__:
                 for __benny__inlist__ in __benny__list__:
                     #exec(__root__object__+'.'+__benny__object__+'.__benny__list__.append("'+__benny__inlist__[0:__benny__inlist__.find('=')].strip()+'")')
-                    out_text = out_text + __root__object__+'.'+__benny__object__+'.__benny__list__.append("'+__benny__inlist__[0:__benny__inlist__.find('=')].strip()+'")\n'
-                    #exec(__root__object__+'.'+__benny__object__+'.'+__benny__inlist__)
+                    out_text = out_text +'if not "'+__benny__inlist__[0:__benny__inlist__.find('=')].strip()+'" in '+__root__object__+'.'+__benny__object__+'.__benny__list__ :\n'
+                    out_text = out_text + ' '+__root__object__+'.'+__benny__object__+'.__benny__list__.append("'+__benny__inlist__[0:__benny__inlist__.find('=')].strip()+'")\n'
+                        #exec(__root__object__+'.'+__benny__object__+'.'+__benny__inlist__)
                     out_text = out_text + __root__object__+'.'+__benny__object__+'.'+__benny__inlist__+'\n'
             else:
                 if __benny__type__value__:
                     #exec(__root__object__+'.__benny__list__.append("'+__benny__object__.strip()+'")')
-                    out_text = out_text + __root__object__+'.__benny__list__.append("'+__benny__object__.strip()+'")\n'
+                    out_text = out_text + 'if not "'+__benny__object__.strip()+'" in '+__root__object__+'.__benny__list__ :\n'
+                    out_text = out_text + ' '+__root__object__+'.__benny__list__.append("'+__benny__object__.strip()+'")\n'
                     #exec(__root__object__+'.'+__benny__object__+'='+__benny__value__)
                     out_text = out_text + __root__object__+'.'+__benny__object__+'='+__benny__value__+'\n'
             if __root__object__=='':
